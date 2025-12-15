@@ -1,0 +1,102 @@
+/* Estilos generales */
+:root {
+  --primary-color: #b30000; /* rojo navideño */
+  --secondary-color: #0b6623; /* verde navideño */
+  --background-color: #fafafa;
+  --text-color: #333;
+  --border-radius: 8px;
+  --shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  background: linear-gradient(135deg, rgba(179,0,0,0.8), rgba(11,102,35,0.8));
+  color: #fff;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+.form-section {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.form-section h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+.form-group span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+button[type="submit"] {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #094f1f;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .form-section {
+    margin: 1rem;
+  }
+}

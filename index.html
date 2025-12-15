@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lotería de Navidad 2025</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <img src="header.png" alt="Lotería de Navidad" class="hero-image">
+    <h1>Lotería de Navidad 2025</h1>
+    <p>Reserva tus décimos antes del 21 de diciembre</p>
+  </header>
+  <main>
+    <section class="form-section">
+      <h2>Formulario de inscripción</h2>
+      <form id="lotteryForm" method="POST" action="https://script.google.com/macros/s/AKfycbyndyh6kX0avo1ATGXAgGZlgDRaeUi6K4X4KzV-a_1_WtUWAO0bzdsStkQGOZK-tCExOw/exec">
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="Nombre" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="shares">Número de décimos</label>
+          <input type="number" id="shares" name="Decimos" min="0.25" step="0.25" value="1" required>
+        </div>
+        <div class="form-group">
+          <label>Total a pagar</label>
+          <span id="totalPrice">20.00 €</span>
+        </div>
+        <button type="submit">Apuntarme</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 – Página creada por Jesús para el sorteo de Navidad.</p>
+    <p><small>Esta página está alojada en GitHub Pages; los datos se guardan de forma segura en Google Sheets.</small></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
